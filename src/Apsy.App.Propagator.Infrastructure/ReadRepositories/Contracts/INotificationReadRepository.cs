@@ -1,0 +1,12 @@
+
+
+namespace Apsy.App.Propagator.Infrastructure.Repositories;
+
+public interface INotificationReadRepository : IRepository<Notification>
+{
+    List<Notification> GetNotifications(int UserId);
+    IQueryable<NotificationDto> GetNotifs(int UserId);
+    List<Notification> GetNotifications(int[] notificationIds);
+    Notification GetNotification(int notificationId);
+    public SingleResponseBase<Notification> GetSoftDelete(int id, bool checkDeleted = false);
+}

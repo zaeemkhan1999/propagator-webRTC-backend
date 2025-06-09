@@ -1,0 +1,15 @@
+﻿global using Aps.CommonBack.Auth.Models.Entities;
+global using Apsy.App.Propagator.Domain.Enums;
+global using Apsy.App.Propagator.Domain.Events;
+global using Aps.CommonBack.Base.Models.Entities;
+global using HotChocolate;
+global using Apsy.App.Propagator.Domain.Events.Events;
+global using Apsy.App.Propagator.Domain.Entities;
+global using Aps.CommonBack.Messaging.Models.Entities;
+global using Aps.CommonBack.Base.Models.Dtos;
+global using Aps.CommonBack.Base.Models.Inputs;
+global using Microsoft.AspNetCore.Http;
+global using Newtonsoft.Json;
+global using System.Text.RegularExpressions;
+global using HotChocolate.Data;
+global using HotChocolate.Types;

@@ -1,0 +1,11 @@
+namespace Apsy.App.Propagator.Infrastructure.Repositories;
+
+public interface IHighLightReadRepository
+ : IRepository<HighLight>
+{
+
+#region functions
+    IQueryable<Story> GetStoriesByHighlightId(List<int> Ids,int UserId);
+    IQueryable<HighLight> GetHighlightId(int Id);
+    #endregion
+}
